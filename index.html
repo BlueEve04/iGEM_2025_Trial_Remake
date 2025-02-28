@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/level.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/loading.css">
+    <script>
+        
+$(window).on('load', function() {
+    var animation = lottie.loadAnimation({
+        container: document.getElementById('loading-animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './img/loading.json' 
+    });
+
+    setTimeout(function() {
+        $('#loading').fadeOut('slow', function() {
+            $(this).remove();
+        });
+    }, 1500);
+});
+
+    </script>
+    <title>大作业-REMAKE</title>
+    <style>
+        body {
+            display: inline;
+            justify-content: center;
+            margin-top: 3vh;
+            height: 100vh;
+            background-color: #f1f1f1;
+            background: linear-gradient(270deg, #072d2b, #302a4c, #340f39);
+            animation: rainbow 5s ease infinite;
+        }
+    </style>
+    <script src="./lib/jquery.js"></script>
+    <script src="./lib/lottie.js"></script>
+</head>
+
+<body>
+    <div id="loading">
+        <div id="loading-animation"></div>
+    </div>
+    <div class="navbox">
+        <ul id="nav">
+            <li class="slide_fixed"></li>
+            <li class="slide_moving"></li>
+            <li><a href="./index.html">主页</a></li>
+            <li><a href="./pages/about.html">信息流</a></li>
+            <li><a href="#">主页</a></li>
+            <li><a href="#">主页</a></li>
+            <li><a href="./pages/about.html">关于</a></li>
+            <li><a href="./pages/team.html">团队</a></li>
+        </ul>
+    </div>
+    <section>
+        <img src="img/stars.png" id="stars">
+        <img src="img/mountain.png" id="mountains_behind">
+        <img src="img/moon.png" id="moon">
+        <h2 id="text">HELLO!!</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="img/mountain.png" id="mountains_left">
+    </section>
+    <div class="sec" id="sec">
+        <h2>主页面有渐变Rainbow彩色背景，横向随滚动而变化的Hello，还有相应层级动画、移动的星空;月亮会随着鼠标与月亮的相对位置而改变3D旋转角度，点击EXPLORE可以跳转文本。素材均原生处理/绘制</h2>
+        <p><br>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Vero iste laboriosam iusto sapiente voluptatum a. Lorem ipsum, dolor sit amet consectetur adipiscing elit. Vero iste laboriosam iusto sapiente voluptatum a. Lorem ipsum, dolor sit amet consectetur adipiscing elit. Vero iste laboriosam iusto sapiente voluptatum a.Lorem ipsum, dolor sit amet consectetur adipiscing elit. Vero iste laboriosam iusto sapiente voluptatum a.Lorem ipsum, dolor sit amet consectetur adipiscing elit. Vero iste laboriosam iusto sapiente voluptatum a.<br><br>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Vero iste laboriosam iusto sapiente voluptatum a. Lorem ipsum, dolor sit amet consectetur adipiscing elit. Vero iste laboriosam iusto sapiente voluptatum a. Lorem ipsum, dolor sit amet consectetur adipiscing elit. Vero iste laboriosam iusto sapiente voluptatum a.<br><br>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Vero iste laboriosam iusto sapiente voluptatum a. Lorem ipsum, dolor sit amet consectetur adipiscing elit. Vero iste laboriosam iusto sapiente voluptatum a. Lorem ipsum, dolor sit amet consectetur adipiscing elit. Vero iste laboriosam iusto sapiente voluptatum a.Lorem ipsum, dolor sit amet consectetur adipiscing elit. Vero iste laboriosam iusto sapiente voluptatum a.Lorem ipsum, dolor sit amet consectetur adipiscing elit. Vero iste laboriosam iusto sapiente voluptatum a.<br><br>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Vero iste laboriosam iusto sapiente voluptatum a. Lorem ipsum, dolor sit amet consectetur adipiscing elit. Vero iste laboriosam iusto sapiente voluptatum a. Lorem ipsum, dolor sit amet consectetur adipiscing elit. Vero iste laboriosam iusto sapiente voluptatum a.Lorem ipsum, dolor sit amet consectetur adipiscing elit. Vero iste laboriosam iusto sapiente voluptatum a.Lorem ipsum, dolor sit amet consectetur adipiscing elit. Vero iste laboriosam iusto sapiente voluptatum a.<br><br>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Vero iste laboriosam iusto sapiente voluptatum a. Lorem ipsum, dolor sit amet consectetur adipiscing elit. Vero iste laboriosam iusto sapiente voluptatum a. Lorem ipsum, dolor sit amet consectetur adipiscing elit. Vero iste laboriosam iusto sapiente voluptatum a.</p>
+    </div>
+    <script src="./script/moving.js"></script>
+    <script src="./script/navbar.js"></script>
+    <script src="./script/loading.js"></script>
+</body>
+
+</html>

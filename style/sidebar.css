@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    border-radius: 15px;
+    height:fit-content;
+    padding: 13px;
+    padding-right: 15px;
+    width: fit-content;
+    position: fixed;
+    top: 34vh;
+    left: 1vw;
+    background-color: #00000071;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #ff47c8;
+    scale: 1.1;
+}
+
+.main {
+    margin-left: 210px;
+    padding: 20px;
+}

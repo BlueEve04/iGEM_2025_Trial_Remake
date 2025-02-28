@@ -1,0 +1,13 @@
+#section1,#section2,#section3,#section4{
+    padding-top: 10vh;
+}
+
+.txt_about{
+    font-size: 3vmin;
+    color: rgb(110, 43, 127);
+}
+
+.topic{
+    font-size: 5vmin;
+    color: rgb(119, 101, 137);
+}
